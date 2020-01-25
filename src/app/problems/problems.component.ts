@@ -15,6 +15,29 @@ export class ProblemsComponent implements OnInit {
   }
 
   sumuj() {
-    this.wynik = this.dane;
+    this.wynik = '' + this.sum_a(this.konwertuj(this.dane));
   }
+
+  solve() {
+
+  }
+
+
+  private sum_a(tab) {
+    let sum = 0;
+    for(let x of tab) {
+      sum += x;
+    }
+    return sum;
+  }
+
+  private konwertuj(str) {
+    let stringi = str.split(' ');
+    let liczby = [];
+    for(let s of stringi) {
+      liczby.push(parseInt(s));
+    }
+    return liczby;
+  }
+
 }
