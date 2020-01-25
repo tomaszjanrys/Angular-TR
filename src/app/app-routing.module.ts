@@ -10,6 +10,7 @@ import {BucketGameComponent} from "./zadania/bucket-game/bucket-game.component";
 import {MtbShopComponent} from "./mtb-shop/mtb-shop.component";
 import {CommentsComponent} from "./comments/comments.component";
 import {ModalsComponent} from "./modals/modals.component";
+import {ProblemsComponent} from "./problems/problems.component";
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -22,6 +23,7 @@ const routes: Routes = [
   { path: 'wonder', component: WonderViewComponent },
   { path: 'comments', component: CommentsComponent },
   { path: 'modals', component: ModalsComponent },
+  { path: 'problems', component: ProblemsComponent },
 ];
 
 @NgModule({
