@@ -26,6 +26,7 @@ import { ModalsComponent } from './modals/modals.component';
 import { ResultsComponent } from './modals/results/results.component';
 import { TtableviewComponent } from './modals/ttableview/ttableview.component';
 import { ProblemsComponent } from './problems/problems.component';
+import { Ncov2019Component } from './ncov2019/ncov2019.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +52,7 @@ import { ProblemsComponent } from './problems/problems.component';
     ResultsComponent,
     TtableviewComponent,
     ProblemsComponent,
+    Ncov2019Component,
   ],
   imports: [
     BrowserModule,

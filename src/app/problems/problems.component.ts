@@ -19,7 +19,8 @@ export class ProblemsComponent implements OnInit {
   }
 
   solve() {
-
+    let numbers = this.dane.split(' ').map(s => parseInt(s)); //tablica czterech liczb
+    
   }
 
 
