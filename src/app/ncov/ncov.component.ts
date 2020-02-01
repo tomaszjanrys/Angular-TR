@@ -1,17 +1,25 @@
 import { Component, OnInit } from '@angular/core';
+import {Case} from "./model/case";
 
 @Component({
-  selector: 'app-ncov2019',
-  templateUrl: './ncov2019.component.html',
-  styleUrls: ['./ncov2019.component.less']
+  selector: 'app-ncov',
+  templateUrl: './ncov.component.html',
+  styleUrls: ['./ncov.component.less']
 })
-export class Ncov2019Component implements OnInit {
+export class NcovComponent implements OnInit {
   // bit.do/2019cov
   confirmed = [1900,2800,4600, 6000, 7750, 9745, 11820];
   deaths = [56, 80, 106, 130, 170, 213, 259];
+  cases: Case[] = [];
   r = 1.21;
   constructor() { }
   ngOnInit() {
+    //new Date() --> aktualny czas w aktualnej strefie czasowej
+    //new Date("2020-01-15") --> godzina 1am tego dnia w aktualnej strefie czasowej
+    //new Date(2020,0,14) --> 14 stycznia (!!) 2020, o 0 godzinie akutalnego czasu
+    for(let i=0; i<this.confirmed.length; i++) {
+      this.cases.push(new Case(new Date(2020,0,25+i), this.confirmed[i], this.deaths[i]));
+    }
   }
 
   calc(array) {
@@ -41,4 +49,5 @@ export class Ncov2019Component implements OnInit {
     return day + ' Mar';
 
   }
+
 }
