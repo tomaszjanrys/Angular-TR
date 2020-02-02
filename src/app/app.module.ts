@@ -28,6 +28,7 @@ import { TtableviewComponent } from './modals/ttableview/ttableview.component';
 import { ProblemsComponent } from './problems/problems.component';
 import { Ncov2019Component } from './ncov2019/ncov2019.component';
 import { NcovComponent } from './ncov/ncov.component';
+import {ChartsModule} from "ng2-charts";
 
 @NgModule({
   declarations: [
@@ -60,7 +61,8 @@ import { NcovComponent } from './ncov/ncov.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ChartsModule
   ],
   providers: [MenuComponent],
   bootstrap: [AppComponent]

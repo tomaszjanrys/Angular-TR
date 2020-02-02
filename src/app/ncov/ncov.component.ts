@@ -10,6 +10,14 @@ export class NcovComponent implements OnInit {
   // bit.do/2019cov
   confirmed = [1900,2800,4600, 6000, 7750, 9745, 11820];
   deaths = [56, 80, 106, 130, 170, 213, 259];
+  chartOptions = {"responsive": true};
+  chartData = [
+    {data: [1,2,3], label: 'x'},
+    {data: [2,3,3], label: 'y'},
+  ];
+  chartLabels = ['A1', 'A2', 'A3'];
+
+
   cases: Case[] = [];
   r = 1.21;
   constructor() { }
