@@ -6,8 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./wykres.component.less']
 })
 export class WykresComponent implements OnInit {
+
+
   public baroptions = {
-    scaleShowVerticalLIne: false,
+    scaleShowVerticalLIne: true,
     responsive: true
   };
     public barLabes = ['Day 1', 'Day 2' ,'Day 3', 'Day 4', 'Day 5', 'Day 6', 'Day 7', 'Day 8' , 'Day 9', 'Day 10', 'Day 11', 'Day 12'];
@@ -23,11 +25,11 @@ export class WykresComponent implements OnInit {
       scaleShowVerticalLIne: false,
       responsive: true
     };
-      public barLabes1 = ['Ile razy wypadła liczba'];
+      public barLabes1 = ['Ile razy wypadła liczba' , 'zmiena'];
       public barlegend1 = true ;
       public barType1 = 'bar';
       public barchart1 = [
-        {data: [50 ] , label: 'Liczba 1'},
+        {data: [22] , label: 'Liczba 1'},
         {data: [206] , label: 'Liczba 2'},
         {data: [100] , label: 'Liczba 3'},
         {data: [50 ] , label: 'Liczba 4'},
