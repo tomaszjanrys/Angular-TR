@@ -14,6 +14,7 @@ import {ProblemsComponent} from "./problems/problems.component";
 import {Ncov2019Component} from "./ncov2019/ncov2019.component";
 import {NcovComponent} from "./ncov/ncov.component";
 import { DomComponent } from './dom/dom.component';
+import { WykresComponent } from './wykres/wykres.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -30,6 +31,8 @@ const routes: Routes = [
   { path: 'ncov', component: Ncov2019Component },
   { path: 'n2019', component: NcovComponent },
   { path: 'dom', component: DomComponent },
+  { path: 'bar-chart', component: WykresComponent },
+
 ];
 
 @NgModule({

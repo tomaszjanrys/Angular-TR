@@ -30,6 +30,7 @@ import { Ncov2019Component } from './ncov2019/ncov2019.component';
 import { NcovComponent } from './ncov/ncov.component';
 import {ChartsModule} from "ng2-charts";
 import { DomComponent } from './dom/dom.component';
+import { WykresComponent } from './wykres/wykres.component';
 
 @NgModule({
   declarations: [
@@ -58,6 +59,7 @@ import { DomComponent } from './dom/dom.component';
     Ncov2019Component,
     NcovComponent,
     DomComponent,
+    WykresComponent,
   ],
   imports: [
     BrowserModule,
