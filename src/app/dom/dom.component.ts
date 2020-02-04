@@ -8,7 +8,7 @@ import { of } from 'rxjs';
 })
 export class DomComponent implements OnInit {
   constructor() { }
-  imie = '';
+  imie  = '';
   liczbax = 11;
   data = [{
     name : 'tomek',
@@ -29,7 +29,14 @@ export class DomComponent implements OnInit {
   zmiana = false;
   zmiana2 = false;
 
-
+pisanie = () =>  {
+this.imie = this.imie.toLocaleUpperCase();
+return this.imie;
+}
+ileliter = () => {
+  this.imie = this.imie;
+  return this.imie.length;
+}
 
 liczenie = () => {
   this.liczbax = this.liczbax + 1;

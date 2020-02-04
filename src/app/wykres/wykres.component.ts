@@ -94,6 +94,18 @@ czartdwa = [];
         pointStyle:'star',
         pointBorderColor:'black',
         fill: true
+      },
+      {
+        label: 'Angielski ilosc ocen',
+        data:[0,0,2,4,0,0],
+        lineTension: 0.4 ,
+        backgroundColor:['rgb(229, 255, 0, 0.5)'],
+        borderColor:'rgb(221, 5, 5)',
+        borderWidth:2,
+        radius:10,
+        pointStyle:'star',
+        pointBorderColor:'black',
+        fill: true
       }]
 
     },

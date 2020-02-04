@@ -8,7 +8,12 @@
 <button class="btn btn-dark" (click)="tomek()">Test</button>
 <hr>
 <br>
-<input type="text" class="btn btn-dark" placeholder="podaj imie " [(ngModel)]="imie">{{imie}}
+<input type="text" class="btn btn-dark" placeholder="SEO - pożądane 1500 znaków " [(ngModel)]="imie">
+<button class="btn btn-info">
+    <h1>{{ileliter()}}</h1>
+</button>
+<h2>{{pisanie()}}</h2>
+
 <table class="table">
     <thead>
         <tr>
@@ -28,4 +33,4 @@
 </table>
 <br>
 <br>
-<button class="btn btn-danger" (click)="liczenie()">Zwiększamy</button><b><h1 [ngClass]="{'h1-1':zmiana,'h1-2':zmiana2 }" (click)="funcolor">{{liczbax}}</h1></b><button class="btn btn-info" (click)="liczeniex()">Zmniejszamy</button>
+<button class="btn btn-danger" (click)="liczenie()">Zwiększamy</button><b><h1 [ngClass]="{'h1-1':zmiana,'h1-2':zmiana2 }">{{liczbax}}</h1></b><button class="btn btn-info" (click)="liczeniex()">Zmniejszamy</button>
