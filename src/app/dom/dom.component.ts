@@ -45,8 +45,9 @@ liczeniex = () => {
   if (this.liczbax < 0) {
     this.zmiana2 = true;
       } else {
-        this.zmiana2 = false;
-      }
+      if (this.liczbax >= 0 ) {
+this.zmiana2 = false;
+      }}
 
 }
 
