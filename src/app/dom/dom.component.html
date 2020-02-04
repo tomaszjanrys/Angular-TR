@@ -5,3 +5,27 @@
         </li>
     </ul>
 </div>
+<button class="btn btn-dark" (click)="tomek()">Test</button>
+<hr>
+<br>
+<input type="text" class="btn btn-dark" placeholder="podaj imie " [(ngModel)]="imie">{{imie}}
+<table class="table">
+    <thead>
+        <tr>
+            <th *ngFor="let im of napis">{{napis}}Nr.</th>
+            <th>Name</th>
+            <th>Nazwisko</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let dat of data; let myIndex = index; let myeven = even; let myodd = odd;" [ngClass]="{odd:myodd, even:myeven}">
+            <td>{{s}}{{myIndex + 1}}</td>
+            <td>{{dat.name}}</td>
+            <td>{{dat.nazwisko}}</td>
+        </tr>
+    </tbody>
+
+</table>
+<br>
+<br>
+<button class="btn btn-danger" (click)="liczenie()">Zwiększamy</button><b><h1 [ngClass]="{'h1-1':zmiana,'h1-2':zmiana2 }" (click)="funcolor">{{liczbax}}</h1></b><button class="btn btn-info" (click)="liczeniex()">Zmniejszamy</button>
